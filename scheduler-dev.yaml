@@ -9,9 +9,7 @@ spring:
           create-database-schemas: true
     show-sql: true
     hibernate:
-      ddl-auto: update        
-  profiles:
-    active: local
+      ddl-auto: update
   datasource:
     url: jdbc:postgresql://localhost:5432/scheduler-service
     username: postgres
