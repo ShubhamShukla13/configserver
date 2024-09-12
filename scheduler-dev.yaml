@@ -3,15 +3,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
       javax:
         persistence:
           create-database-schemas: true
     show-sql: true
     hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
+      ddl-auto: update        
   profiles:
     active: local
   datasource:
