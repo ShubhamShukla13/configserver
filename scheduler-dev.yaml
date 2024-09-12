@@ -1,1 +1,25 @@
-https://github.com/ShubhamShukla13/configserver
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      javax:
+        persistence:
+          create-database-schemas: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/scheduler-service
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+doc:
+  base:
+    url: http://abc.example
